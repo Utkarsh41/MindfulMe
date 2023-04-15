@@ -1,7 +1,7 @@
-# Sarathi-Mental-Wellness-app-
+# MindfulMe-Mental-Wellness-app-
 
 
-Sarathi is an android application to help people cope with their mental health issues, such as depression, anxiety and stress.
+MindfulMe is an android application to help people cope with their mental health issues, such as depression, anxiety and stress.
 We use people-friendly methods to know more about the person and their problems through mood trackers and the chatbot. 
 We also provide audio therapy, meditation and yoga, games, and self-help books to help the user feel calm and comfortable.
 
