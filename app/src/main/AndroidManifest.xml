@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission
+        android:name="android.permission.PACKAGE_USAGE_STATS"
+        tools:ignore="ProtectedPermissions" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/growth"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Sarathi"
+        tools:targetApi="31">
+
+
+        <activity
+            android:name=".AboutUs"
+            android:label="About Us"
+           android:parentActivityName=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activityPack.moodtrack.NoteHistory"
+            android:exported="false"
+            android:label="Mood History"
+            android:parentActivityName=".activityPack.moodtrack.MoodTracker" />
+        <activity
+            android:name=".activityPack.moodtrack.MoodHistory"
+            android:exported="false"
+            android:label="Mood History"
+            android:parentActivityName=".activityPack.moodtrack.MoodTracker" />
+        <activity
+            android:name=".activityPack.moodtrack.MoodTest"
+            android:exported="false"
+            android:label="Mood Test"
+            android:parentActivityName=".activityPack.moodtrack.MoodTracker" />
+
+        <activity
+            android:name=".activityPack.sleepcycle.StartSleep"
+            android:exported="false"
+            android:label="Sleep Tracker"
+            android:parentActivityName=".activityPack.sleepcycle.SleepCycleM" />
+        <activity
+            android:name=".activityPack.sleepcycle.SleepHistory"
+            android:exported="false"
+            android:label="Sleep History" />
+        <activity
+            android:name=".activityPack.mobileusage.MobileUsage"
+            android:exported="false"
+            android:label="Mobile Usage" />
+        <activity
+            android:name=".activityPack.sleepcycle.SleepCycleM"
+            android:exported="false"
+            android:label="Sleep Tracker" />
+        <activity
+            android:name=".activityPack.moodtrack.MoodTracker"
+            android:exported="false"
+            android:label="Mood Tracker"
+            android:parentActivityName=".activityPack.ActivityProgressTrack" />
+        <activity
+            android:name=".cohortChatbot.SrMainActivity"
+            android:exported="false"
+            android:label="Kahna"
+            android:parentActivityName=".ExploreMindfulMe" />
+        <activity
+            android:name=".selfHelpBooksPack.ViewPdf"
+            android:exported="false"
+            android:parentActivityName=".audioTherapyPack.AudioTherapy" />
+        <activity
+            android:name=".activityPack.ActivityProgressTrack"
+            android:exported="false"
+            android:label="Activity Progress"
+            android:parentActivityName=".ExploreMindfulMe" />
+        <activity
+            android:name=".gamepack.GameView"
+            android:exported="false"
+            android:parentActivityName=".gamepack.Games" />
+        <activity
+            android:name=".gamepack.Games"
+            android:exported="false"
+            android:label="Games"
+            android:parentActivityName=".ExploreMindfulMe" />
+        <activity
+            android:name=".mediPack.MeditationYoga"
+            android:exported="false"
+            android:label="Meditation Yoga"
+            android:parentActivityName=".ExploreMindfulMe" />
+        <activity
+            android:name=".mediPack.Breathingdes"
+            android:exported="false"
+            android:label="Breathing Exercise"
+            android:parentActivityName=".mediPack.BreathingEx" />
+        <activity
+            android:name=".mediPack.BreathingEx"
+            android:exported="false"
+            android:label="Breathing Exercise"
+            android:parentActivityName=".mediPack.MeditationYoga" />
+        <activity
+            android:name=".mediPack.Yoga"
+            android:exported="false"
+            android:label="Yoga"
+            android:parentActivityName=".mediPack.MeditationYoga" />
+        <activity
+            android:name=".mediPack.Yogades"
+            android:exported="false"
+            android:label="Yoga"
+            android:parentActivityName=".mediPack.Yoga" />
+        <activity
+            android:name=".audioTherapyPack.AudioTherapy"
+            android:exported="false"
+            android:label="Audio Therapy"
+            android:parentActivityName=".ExploreMindfulMe" />
+        <activity
+            android:name=".selfHelpBooksPack.SelfHelpBooks"
+            android:exported="false"
+            android:label="Self Help Books"
+            android:parentActivityName=".ExploreMindfulMe" />
+        <activity
+            android:name=".ExploreMindfulMe"
+            android:exported="false"
+            android:label="Explore Sarathi"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".egitaPack.EGita"
+            android:exported="false"
+            android:parentActivityName=".ExploreMindfulMe" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Splash"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

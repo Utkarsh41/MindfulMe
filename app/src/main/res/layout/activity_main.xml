@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/spiritualui"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+    <com.denzcoskun.imageslider.ImageSlider
+        android:id="@+id/imageSlider"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:padding="12dp"
+        app:iss_auto_cycle="true"
+        app:iss_corner_radius="18"
+        app:iss_delay="4000"
+        app:iss_period="5000"
+        app:iss_title_background="@drawable/gradient"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </com.denzcoskun.imageslider.ImageSlider>
+
+
+    <LinearLayout
+        android:id="@+id/questAnsLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageSlider">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/howaruCv"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="18dp"
+            android:backgroundTint="@color/lavender"
+            app:cardCornerRadius="14sp"
+            >
+
+            <TextView
+                android:id="@+id/questionTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/marko_one"
+                android:padding="3dp"
+                android:text="How are you feeling today ?"
+                android:textAlignment="center"
+                android:textColor="@color/off_white"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                >
+
+            </TextView>
+        </androidx.cardview.widget.CardView>
+
+
+        <android.widget.Button
+            android:id="@+id/option1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="5dp"
+            android:background="@color/krishnafeather"
+            android:fontFamily="@font/marko_one"
+            android:text="Option one"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            >
+        </android.widget.Button>
+
+        <android.widget.Button
+            android:id="@+id/option2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="5dp"
+            android:background="@color/krishnafeather"
+            android:fontFamily="@font/marko_one"
+            android:text="Option 2"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            >
+        </android.widget.Button>
+
+        <android.widget.Button
+            android:id="@+id/option3"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="5dp"
+            android:background="@color/krishnafeather"
+            android:fontFamily="@font/marko_one"
+            android:text="Option 3"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            >
+        </android.widget.Button>
+        <android.widget.Button
+            android:id="@+id/option4"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="5dp"
+            android:background="@color/krishnafeather"
+            android:fontFamily="@font/marko_one"
+            android:text="Option 4"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            >
+        </android.widget.Button>
+
+
+
+    </LinearLayout>
+
+
+        <android.widget.Button
+            android:id="@+id/exploreApp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="100dp"
+            app:layout_goneMarginBottom="20dp"
+            android:background="@drawable/buttonbackground"
+            android:fontFamily="@font/marko_one"
+            android:text="Explore App"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/questAnsLinearLayout"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            >
+        </android.widget.Button>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>
